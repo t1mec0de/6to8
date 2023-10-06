@@ -1,0 +1,59 @@
+    <!DOCTYPE html>  
+    <html>  
+    <head>  
+    <style>
+    div.space{
+      margin-bottom: 250px;
+    }
+    #circle {
+width: 100px;
+height: 100px;
+background: red;
+-moz-border-radius: 50px;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+}
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+    <script>   
+    $(document).ready(function(){  
+        $("button.primary").click(function(){  
+            $("div").animate({  
+                left: '250px',  
+                opacity: '0.5',  
+                height: '150px',  
+                width: '150px'  
+            });  
+        });  
+    });  
+$(document).ready(function(){
+  $("button.second").click(function(){
+    $("p").toggle();
+  });
+});
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+    </script>   
+    </head>  
+    <body>  
+    <button class="primary">Анимация</button>  
+    <div id="circle" style="background:#00FFFF;height:100px;width:100px;position:absolute;"></div>  
+<br>
+<div class="space"></div>
+	<button class="second">Список продуктов:</button>
+
+<p>Яйца куринные-20 штук</p>
+<p>Кофе-Бразильское(450 грамм)</p>
+<p>Банан 2 штуки</p>
+<p>Мясо-Стейк(300 грамм)</p>
+<p>Рыба-Осетр(2 рыбы)</p>
+<p>Алкоголь-Белое вино</p>
+<p>Лимон-2 штуки</p>
+<p>Соль-килограмм</p>
+<p>Макарошки-1 килограмм</p>
+<p>Чай зеленый-30 пакетиков</p>
+    </body>  
+    </html>  
